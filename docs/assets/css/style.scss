@@ -1,0 +1,51 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Personalización del tema
+.page-header {
+  background-color: #7289DA;
+  background-image: linear-gradient(120deg, #7289DA, #2C2F33);
+}
+
+.main-content {
+  h1, h2, h3, h4, h5, h6 {
+    color: #7289DA;
+  }
+}
+
+.btn {
+  background-color: #7289DA;
+  &:hover {
+    background-color: #5865F2;
+  }
+}
+
+code {
+  background-color: #2C2F33;
+  color: #FFFFFF;
+}
+
+pre {
+  background-color: #2C2F33;
+  border: 1px solid #23272A;
+}
+
+// Mejoras de navegación
+.site-nav {
+  background-color: #2C2F33;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  
+  a {
+    color: #FFFFFF;
+    margin-right: 1rem;
+    text-decoration: none;
+    
+    &:hover {
+      color: #7289DA;
+    }
+  }
+}

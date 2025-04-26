@@ -1,0 +1,34 @@
+# Configuración del sitio
+title: Discord.js Bot Template
+description: Una guía completa para crear bots de Discord
+theme: jekyll-theme-cayman
+
+# Configuración de navegación
+show_downloads: true
+google_analytics: # Tu ID de Google Analytics (opcional)
+
+# Configuración de markdown
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Estructura de navegación
+header_pages:
+  - getting-started.md
+  - COMMANDS.md
+  - EVENTS.md
+  - DATABASE.md
+  - DEPLOYMENT.md
+  - EXAMPLES.md
+
+# Excluir archivos
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
