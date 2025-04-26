@@ -11,13 +11,13 @@
 }
 
 .main-content {
-  h1, h2, h3, h4, h5, h6 {
-    color: #7289DA;
-  }
-  
   max-width: 64rem;
   margin: 0 auto;
   padding: 2rem;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #7289DA;
+  }
 }
 
 .btn {
