@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="project-name">{{ page.title | default: site.title }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description }}</h2>
+      
+      <nav class="site-nav">
+        {% for link in site.nav_links %}
+          <a href="{{ site.baseurl }}{{ link.url }}" class="nav-link">{{ link.title }}</a>
+        {% endfor %}
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="breadcrumbs">
+        <a href="{{ site.baseurl }}/">Inicio</a>
+        {% if page.url != "/" %}
+          > {{ page.title }}
+        {% endif %}
+      </div>
+
+      {{ content }}
+
+      <footer class="site-footer">
+        <span class="site-footer-owner">
+          <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> es mantenido por
+          <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.
+        </span>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -2,6 +2,8 @@
 title: Discord.js Bot Template
 description: Una guía completa para crear bots de Discord
 theme: jekyll-theme-cayman
+baseurl: "/Mxrp-Template"
+url: "https://syphrondev.github.io"
 
 # Configuración de navegación
 show_downloads: true
@@ -17,13 +19,21 @@ plugins:
   - jekyll-seo-tag
 
 # Estructura de navegación
-header_pages:
-  - getting-started.md
-  - COMMANDS.md
-  - EVENTS.md
-  - DATABASE.md
-  - DEPLOYMENT.md
-  - EXAMPLES.md
+nav_links:
+  - title: Inicio
+    url: /
+  - title: Guía de Inicio
+    url: /getting-started
+  - title: Comandos
+    url: /commands
+  - title: Eventos
+    url: /events
+  - title: Base de Datos
+    url: /database
+  - title: Despliegue
+    url: /deployment
+  - title: Ejemplos
+    url: /examples
 
 # Excluir archivos
 exclude:
