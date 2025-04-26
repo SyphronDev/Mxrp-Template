@@ -23,15 +23,15 @@ navigation:
   - title: Guía de Inicio
     url: /getting-started.html
   - title: Comandos
-    url: /commands.html
+    url: /COMMANDS.html
   - title: Eventos
-    url: /events.html
+    url: /EVENTS.html
   - title: Base de Datos
-    url: /database.html
+    url: /DATABASE.html
   - title: Despliegue
-    url: /deployment.html
+    url: /DEPLOYMENT.html
   - title: Ejemplos
-    url: /examples.html
+    url: /EXAMPLES.html
 
 # Excluir archivos
 exclude:
