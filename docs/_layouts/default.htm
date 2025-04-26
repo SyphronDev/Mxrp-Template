@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
@@ -12,8 +13,8 @@
       <h2 class="project-tagline">{{ page.description | default: site.description }}</h2>
       
       <nav class="site-nav">
-        {% for link in site.nav_links %}
-          <a href="{{ site.baseurl }}{{ link.url }}" class="nav-link">{{ link.title }}</a>
+        {% for item in site.navigation %}
+          <a href="{{ site.baseurl }}{{ item.url }}" class="nav-link">{{ item.title }}</a>
         {% endfor %}
       </nav>
     </header>
@@ -22,17 +23,21 @@
       <div class="breadcrumbs">
         <a href="{{ site.baseurl }}/">Inicio</a>
         {% if page.url != "/" %}
-          > {{ page.title }}
+          > <a href="{{ page.url | remove: '.html' }}">{{ page.title }}</a>
         {% endif %}
       </div>
 
       {{ content }}
 
       <footer class="site-footer">
-        <span class="site-footer-owner">
-          <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> es mantenido por
-          <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.
-        </span>
+        <div class="navigation-footer">
+          {% if page.previous %}
+            <a href="{{ site.baseurl }}{{ page.previous.url }}" class="prev-link">← {{ page.previous.title }}</a>
+          {% endif %}
+          {% if page.next %}
+            <a href="{{ site.baseurl }}{{ page.next.url }}" class="next-link">{{ page.next.title }} →</a>
+          {% endif %}
+        </div>
       </footer>
     </main>
   </body>

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Guía de Inicio
+---
+
 # 🚀 Guía de Inicio
 
 Esta guía te ayudará a configurar y ejecutar el bot de Discord.
@@ -13,7 +18,7 @@ Esta guía te ayudará a configurar y ejecutar el bot de Discord.
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/tuusuario/discord-bot-template
+git clone https://github.com/SyphronDev/Mxrp-Template
 ```
 
 2. Instala las dependencias:
@@ -51,6 +56,6 @@ src/
 
 ## Siguientes Pasos
 
-- [Crear tu primer comando](COMMANDS.md)
-- [Manejar eventos](EVENTS.md)
-- [Configurar la base de datos](DATABASE.md)
+- [Crear tu primer comando]({{ site.baseurl }}/commands.html)
+- [Manejar eventos]({{ site.baseurl }}/events.html)
+- [Configurar la base de datos]({{ site.baseurl }}/database.html)

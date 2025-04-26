@@ -1,21 +1,8 @@
-# Configuración del sitio
 title: Discord.js Bot Template
 description: Una guía completa para crear bots de Discord
 remote_theme: pages-themes/cayman@v0.2.0
 baseurl: "/Mxrp-Template"
-url: "https://syphrondev.github.io"
-
-# Configuración de navegación
-show_downloads: true
-github:
-  is_project_page: true
-  repository_url: https://github.com/SyphronDev/Mxrp-Template
-
-# Configuración de markdown
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+url: "https://syphrondev.github.io/Mxrp-Template"
 
 # Plugins
 plugins:
@@ -23,22 +10,28 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# Configuración de markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 # Estructura de navegación
-nav_links:
+navigation:
   - title: Inicio
     url: /
   - title: Guía de Inicio
-    url: /getting-started
+    url: /getting-started.html
   - title: Comandos
-    url: /commands
+    url: /commands.html
   - title: Eventos
-    url: /events
+    url: /events.html
   - title: Base de Datos
-    url: /database
+    url: /database.html
   - title: Despliegue
-    url: /deployment
+    url: /deployment.html
   - title: Ejemplos
-    url: /examples
+    url: /examples.html
 
 # Excluir archivos
 exclude:
