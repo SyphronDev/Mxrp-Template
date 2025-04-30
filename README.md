@@ -24,7 +24,7 @@ Este es un template educativo para crear bots de Discord usando Discord.js v14. 
 
 1. Clona este repositorio
 ```bash
-git clone https://github.com/tuusuario/discord-bot-template
+git clone https://github.com/SyphronDev/Mxrp-Template.git
 ```
 
 2. Instala las dependencias
