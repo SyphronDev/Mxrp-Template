@@ -12,8 +12,8 @@ export default {
    */
   async execute(client) {
     const Activities = [
-      { name: "Bot Santander", type: ActivityType.Watching },
-      { name: "El Mejor Banco de Mexico", type: ActivityType.Listening },
+      { name: "Under Development", type: ActivityType.Watching },
+      { name: "MXRP Template", type: ActivityType.Listening },
       { name: "Alpha Release", type: ActivityType.Playing },
     ];
 
