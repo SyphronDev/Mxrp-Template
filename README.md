@@ -29,9 +29,11 @@ git clone https://github.com/SyphronDev/Mxrp-Template.git
 
 2. Instala Bun
 
+```bash
 Ingresa a: https://bun.sh/ y descarga la version mas reciente. 
 Revisa que arquitetura de tu computadora es x64 o x86 (Windows, Linux, macOS).
 Sigue las instrucciones de instalacion que se te proporcionan en la pagina web.
+```
 
 3. Instala las dependencias
 ```bash
