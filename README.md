@@ -27,21 +27,27 @@ Este es un template educativo para crear bots de Discord usando Discord.js v14. 
 git clone https://github.com/SyphronDev/Mxrp-Template.git
 ```
 
-2. Instala las dependencias
+2. Instala Bun
+
+Ingresa a: https://bun.sh/ y descarga la version mas reciente. 
+Revisa que arquitetura de tu computadora es x64 o x86 (Windows, Linux, macOS).
+Sigue las instrucciones de instalacion que se te proporcionan en la pagina web.
+
+3. Instala las dependencias
 ```bash
 bun install
 # o
 npm install
 ```
 
-3. Crea un archivo `.env` en la raíz del proyecto:
+4. Crea un archivo `.env` en la raíz del proyecto:
 ```env
 Token=tu_token_de_discord
 MongoURI=tu_uri_de_mongodb
 Developer=tu_id_de_discord
 ```
 
-4. Inicia el bot
+5. Inicia el bot
 ```bash
 bun run start
 # o
